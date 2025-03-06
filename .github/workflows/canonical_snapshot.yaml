@@ -31,14 +31,15 @@ jobs:
     - name: Create canonical snapshot
       run: |
         #python -m gh_store.tools.canonical_snapshot
-        python scripts/canonical_snapshot.py 
+        python scripts/canonical_snapshot.py --output "${{ env.OUTPUT_PATH }}"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ github.repository }}
         OUTPUT_PATH: ${{ github.event.inputs.output_path || 'canonical_snapshot.json' }}
-    
-    - name: Upload snapshot
-      uses: actions/upload-artifact@v3
+
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        name: canonical-snapshot
-        path: ${{ github.event.inputs.output_path || 'canonical_snapshot.json' }}
+        file_pattern: "${{ env.OUTPUT_PATH }}"
+      env:
+        OUTPUT_PATH: ${{ github.event.inputs.output_path || 'canonical_snapshot.json' }}
