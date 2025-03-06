@@ -105,3 +105,45 @@ def create_canonical_snapshot(
     except Exception as e:
         logger.exception("Unexpected error occurred")
         raise SystemExit(1)
+
+
+def main():
+    import argparse
+    """Command line interface for canonical snapshot creation."""
+    parser = argparse.ArgumentParser(description="Create a canonical snapshot with virtual merging")
+    
+    # Parameters
+    parser.add_argument("--token", help="GitHub token (defaults to GITHUB_TOKEN env var)")
+    parser.add_argument("--repo", help="Repository in owner/repo format (defaults to GITHUB_REPOSITORY env var)")
+    parser.add_argument("--output", default="canonical_snapshot.json", help="Output file path")
+    parser.add_argument("--config", help="Path to config file")
+    
+    args = parser.parse_args()
+    
+    # Use environment variables as fallbacks
+    token = args.token or os.environ.get("GITHUB_TOKEN")
+    repo = args.repo or os.environ.get("GITHUB_REPOSITORY")
+    
+    if not token:
+        logger.error("GitHub token is required (pass --token or set GITHUB_TOKEN env var)")
+        return 1
+        
+    if not repo:
+        logger.error("Repository is required (pass --repo or set GITHUB_REPOSITORY env var)")
+        return 1
+    
+    try:
+        create_canonical_snapshot(
+            token=token,
+            repo=repo,
+            output=args.output,
+            config=args.config
+        )
+        return 0
+    except Exception as e:
+        logger.exception(f"Failed to create canonical snapshot: {e}")
+        return 1
+
+
+if __name__ == "__main__":
+    main()
