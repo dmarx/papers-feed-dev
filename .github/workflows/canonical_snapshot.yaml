@@ -1,0 +1,44 @@
+name: Create Canonical Snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      output_path:
+        description: 'Output file path'
+        required: false
+        default: 'canonical_snapshot.json'
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly at midnight on Sunday
+
+jobs:
+  create-snapshot:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install gh-store
+    
+    - name: Create canonical snapshot
+      run: |
+        #python -m gh_store.tools.canonical_snapshot
+        python scripts/canonical_snapshot.py 
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        OUTPUT_PATH: ${{ github.event.inputs.output_path || 'canonical_snapshot.json' }}
+    
+    - name: Upload snapshot
+      uses: actions/upload-artifact@v3
+      with:
+        name: canonical-snapshot
+        path: ${{ github.event.inputs.output_path || 'canonical_snapshot.json' }}
