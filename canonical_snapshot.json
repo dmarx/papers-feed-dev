@@ -1,0 +1,280 @@
+{
+  "snapshot_time": "2025-03-09T00:40:05.023602+00:00",
+  "repository": "dmarx/papers-feed-dev",
+  "objects": {
+    "interactions:2412.06769": {
+      "data": {
+        "paper_id": "2412.06769",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-20T07:21:08.269Z",
+            "data": {
+              "duration_seconds": 11
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T02:04:37+00:00",
+        "updated_at": "2025-03-06T02:05:34+00:00",
+        "version": 9
+      }
+    },
+    "interactions:2501.09891": {
+      "data": {
+        "paper_id": "2501.09891",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-20T07:18:47.104Z",
+            "data": {
+              "duration_seconds": 50
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T02:03:35+00:00",
+        "updated_at": "2025-03-06T02:03:57+00:00",
+        "version": 5
+      }
+    },
+    "paper:2501.09891": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T02:03:03+00:00",
+        "updated_at": "2025-03-06T02:03:31+00:00",
+        "version": 3
+      }
+    },
+    "interactions:2403.09635": {
+      "data": {
+        "paper_id": "2403.09635",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-20T07:16:16.346Z",
+            "data": {
+              "duration_seconds": 166
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T02:02:12+00:00",
+        "updated_at": "2025-03-06T02:03:00+00:00",
+        "version": 5
+      }
+    },
+    "paper:2403.09635": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T02:01:50+00:00",
+        "updated_at": "2025-03-06T02:02:45+00:00",
+        "version": 4
+      }
+    },
+    "interactions:2006.08570": {
+      "data": {
+        "paper_id": "2006.08570",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-20T05:52:56.112Z",
+            "data": {
+              "duration_seconds": 10
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T02:00:26+00:00",
+        "updated_at": "2025-03-06T02:01:47+00:00",
+        "version": 13
+      }
+    },
+    "paper:2006.08570": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:59:53+00:00",
+        "updated_at": "2025-03-06T02:00:22+00:00",
+        "version": 3
+      }
+    },
+    "interactions:2006.02043": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:59:32+00:00",
+        "updated_at": "2025-03-06T01:59:49+00:00",
+        "version": 2
+      }
+    },
+    "paper:2006.02043": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:59:00+00:00",
+        "updated_at": "2025-03-06T01:59:28+00:00",
+        "version": 3
+      }
+    },
+    "paper:1801.02042": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:58:50+00:00",
+        "updated_at": "2025-03-06T01:58:56+00:00",
+        "version": 1
+      }
+    },
+    "interactions:1710.06026": {
+      "data": {
+        "paper_id": "1710.06026",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-19T20:57:29.512Z",
+            "data": {
+              "duration_seconds": 25
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T01:58:23+00:00",
+        "updated_at": "2025-03-06T01:58:47+00:00",
+        "version": 4
+      }
+    },
+    "paper:1710.06026": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:57:51+00:00",
+        "updated_at": "2025-03-06T01:58:18+00:00",
+        "version": 3
+      }
+    },
+    "interactions:2307.13912": {
+      "data": {
+        "paper_id": "2307.13912",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-19T16:14:00.292Z",
+            "data": {
+              "duration_seconds": 4
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T01:56:54+00:00",
+        "updated_at": "2025-03-06T01:57:48+00:00",
+        "version": 9
+      }
+    },
+    "paper:2307.13912": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:56:33+00:00",
+        "updated_at": "2025-03-06T01:56:50+00:00",
+        "version": 2
+      }
+    },
+    "interactions:2410.05437": {
+      "data": {
+        "paper_id": "2410.05437",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-19T09:46:23.440Z",
+            "data": {
+              "duration_seconds": 17
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T01:55:13+00:00",
+        "updated_at": "2025-03-06T01:56:28+00:00",
+        "version": 4
+      }
+    },
+    "paper:2410.05437": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:54:40+00:00",
+        "updated_at": "2025-03-06T01:56:18+00:00",
+        "version": 8
+      }
+    },
+    "interactions:2406.07522": {
+      "data": {
+        "paper_id": "2406.07522",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-19T04:15:52.932Z",
+            "data": {
+              "duration_seconds": 3,
+              "session_config": {
+                "idle_threshold_seconds": 300,
+                "min_duration_seconds": 3,
+                "continuous_activity_required": true,
+                "partial_sessions_logged": false
+              }
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T01:53:39+00:00",
+        "updated_at": "2025-03-06T01:54:31+00:00",
+        "version": 8
+      }
+    },
+    "paper:2406.07522": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:52:35+00:00",
+        "updated_at": "2025-03-06T01:53:34+00:00",
+        "version": 6
+      }
+    },
+    "interactions:1503.03585": {
+      "data": {
+        "paper_id": "1503.03585",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-01-19T02:52:38.492Z",
+            "data": {
+              "duration_seconds": 77,
+              "session_config": {
+                "idle_threshold_seconds": 300,
+                "min_duration_seconds": 3,
+                "continuous_activity_required": true,
+                "partial_sessions_logged": false
+              }
+            }
+          }
+        ]
+      },
+      "meta": {
+        "created_at": "2025-03-06T01:51:14+00:00",
+        "updated_at": "2025-03-06T01:52:21+00:00",
+        "version": 14
+      }
+    },
+    "paper:1503.03585": {
+      "data": {},
+      "meta": {
+        "created_at": "2025-03-06T01:51:03+00:00",
+        "updated_at": "2025-03-06T01:51:36+00:00",
+        "version": 2
+      }
+    }
+  },
+  "relationships": {
+    "aliases": {}
+  }
+}
